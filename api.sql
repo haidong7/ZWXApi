@@ -1,0 +1,23 @@
+create table Login(
+deviceId int auto_increment,
+deviceName varchar(64) not null,
+deviceMac varchar(64) not null,
+deviceSn varchar(128) not null,
+deviceType varchar(64) not null,
+deviceHardwareVersion varchar(128),
+deviceSoftwareVersion varchar(128),
+deviceDatetime varchar(64),
+deviceRuntime varchar(64),
+deviceStorage varchar(64),
+deviceFiletype varchar(64),
+deviceFileuploadUrl varchar(64),
+deviceFileVersion varchar(64) default '1',
+deviceActivityInterval varchar(64),
+deviceSaveInterval varchar(64),
+deviceUploadInterval varchar(64),
+deviceWanIp varchar(64),
+deviceLanIp varchar(64),
+created_at datetime,
+updated_at datetime,
+primary key(deviceId)
+)engine=innodb charset=utf8;
